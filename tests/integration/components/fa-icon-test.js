@@ -74,6 +74,6 @@ test('it optionally renders fa-spin class', function(assert){
   assert.notOk(this.$('svg').attr('class').split(/\s+/).includes('fa-spin'), 'Should not include fa-spin class')
   this.set('isSpinning', true)
   assert.ok(this.$('svg').attr('class').split(/\s+/).includes('fa-spin'), 'Should include fa-spin class')
-  this.set('isSpinning', true)
+  this.set('isSpinning', false)
   assert.notOk(this.$('svg').attr('class').split(/\s+/).includes('fa-spin'), 'Should not include fa-spin class')
 })
